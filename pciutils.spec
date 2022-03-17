@@ -1,6 +1,6 @@
 Name:		pciutils
 Version:	3.7.0
-Release:	5%{?dist}
+Release:	6%{?dist}
 Summary:	PCI bus related utilities
 License:	GPLv2+
 URL:		https://mj.ucw.cz/sw/pciutils/
@@ -100,6 +100,10 @@ install -p -m 644 lib/libpci.pc $RPM_BUILD_ROOT%{_libdir}/pkgconfig
 %{_mandir}/man7/*
 
 %changelog
+* Thu Mar 17 2022 Milkice Qiu <milkice@milkice.me> - 3.7.0-6
+- Add support for RISC-V (riscv64)
+- Patch from David Abdurachmanov <david.abdurachmanov@gmail.com>
+
 * Thu Jan 20 2022 Fedora Release Engineering <releng@fedoraproject.org> - 3.7.0-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
 
